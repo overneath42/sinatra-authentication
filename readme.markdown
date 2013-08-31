@@ -1,5 +1,7 @@
 ### A little sinatra gem that implements user authentication, with support for Datamapper, Mongomapper, Mongoid, Sequel and Rufus-Tokyo
 
+#### forked by Justin Toon to change template engine and adjust routes
+
 ## INSTALLATION:
 
 in your sinatra app simply require either "dm-core", 'sequel', 'rufus-tokyo', 'mongoid' or "mongo_mapper", "digest/sha1", 'rack-flash' (if you want flash messages) and then "sinatra-authentication" and turn on session storage
