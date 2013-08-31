@@ -12,7 +12,7 @@ module Sinatra
       #loading the view from this path into a string and rendering it
       app.set :sinatra_authentication_view_path, File.expand_path('../views/', __FILE__)
       unless defined?(settings.template_engine)
-        app.set :template_engine, :haml
+        app.set :template_engine, :erb
       end
 
       app.get '/users/?' do
