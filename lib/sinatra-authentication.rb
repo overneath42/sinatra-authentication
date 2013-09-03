@@ -114,6 +114,7 @@ module Sinatra
         login_required
         redirect "/users" unless current_user.admin? || current_user.id.to_s == params[:id]
         @user = User.get(:id => params[:id])
+        @truck = MenuItem.get(:dmuser => params[:id])
         send settings.template_engine, get_view_as_string("edit.#{settings.template_engine}"), :layout => use_layout?
       end
 
